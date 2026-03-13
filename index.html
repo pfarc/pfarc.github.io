@@ -3,55 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Delete Your Account - Cüzdanım App</title>
+    <title>Data Deletion & Privacy - Cüzdanım</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 800px;
-            margin: 50px auto;
-            padding: 0 20px;
-            line-height: 1.6;
-            color: #333;
-        }
-        h1, h2 {
-            color: #2c3e50;
-        }
-        a {
-            color: #3498db;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        .note {
-            background-color: #f9f9f9;
-            border-left: 4px solid #3498db;
-            padding: 10px;
-            margin: 20px 0;
-        }
+        body { font-family: 'Segoe UI', Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 0 20px; line-height: 1.6; color: #333; background-color: #f4f7f6; }
+        .container { background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        h2 { color: #2980b9; margin-top: 30px; font-size: 1.2em; }
+        .lang-section { margin-bottom: 40px; padding-bottom: 20px; border-bottom: 1px inset #eee; }
+        .note { background-color: #e8f4fd; border-left: 5px solid #3498db; padding: 15px; margin: 20px 0; border-radius: 4px; }
+        a { color: #3498db; text-decoration: none; font-weight: bold; }
+        code { background: #eee; padding: 2px 5px; border-radius: 3px; }
     </style>
 </head>
 <body>
-    <h1>Delete Your Account - Cüzdanım App</h1>
+    <div class="container">
+        <h1>Cüzdanım - Data Management</h1>
 
-    <p>Thank you for using <strong>Cüzdanım - Budget App</strong>. We respect your privacy and want to make it easy for you to delete your data.</p>
+        <div class="lang-section">
+            <h2>🇬🇧 Account & Data Deletion (English)</h2>
+            <p>We do <strong>not</strong> store your personal data or financial records on our servers. All backups are stored directly in your personal Google Drive account.</p>
+            <div class="note">
+                <strong>How to delete your data:</strong><br>
+                1. Open <strong>Cüzdanım</strong> app -> Settings -> Google Drive.<br>
+                2. Disconnect your account.<br>
+                3. Go to your Google Drive and delete the <code>Cüzdanım Backup</code> folder.
+            </div>
+            <p>For manual deletion requests: <a href="mailto:fevzialtuntas37@gmail.com">fevzialtuntas37@gmail.com</a></p>
+        </div>
 
-    <div class="note">
-        <strong>Important:</strong> All your app data is stored in your own Google Drive account. We do <strong>not</strong> store or access any of your personal data on our servers.
+        <div class="lang-section">
+            <h2>🇹🇷 Hesap ve Veri Silme (Türkçe)</h2>
+            <p>Kişisel verileriniz veya finansal kayıtlarınız sunucularımızda <strong>tutulmaz</strong>. Tüm yedekler doğrudan kendi Google Drive hesabınızda saklanır.</p>
+            <div class="note">
+                <strong>Verilerinizi nasıl silersiniz:</strong><br>
+                1. <strong>Cüzdanım</strong> uygulamasını açın -> Ayarlar -> Google Drive.<br>
+                2. Hesabınızın bağlantısını kesin.<br>
+                3. Google Drive'ınıza gidin ve <code>Cüzdanım Backup</code> klasörünü silin.
+            </div>
+        </div>
+
+        <div class="lang-section">
+            <h2>🇩🇪 Datenlöschung (Deutsch)</h2>
+            <p>Löschen Sie einfach den Ordner <code>Cüzdanım Backup</code> in Ihrem Google Drive, um alle Daten zu entfernen.</p>
+        </div>
+
+        <div class="lang-section">
+            <h2>🇫🇷 Suppression des données (Français)</h2>
+            <p>Supprimez le dossier <code>Cüzdanım Backup</code> dans votre Google Drive pour effacer vos données.</p>
+        </div>
+
+        <div class="lang-section">
+            <h2>🇮🇳 डेटा हटाना (Hindi)</h2>
+            <p>अपना डेटा हटाने के लिए Google Drive से <code>Cüzdanım Backup</code> फ़ोल्डर हटा दें।</p>
+        </div>
+
+        <p style="font-size: 0.9em; color: #7f8c8d; text-align: center;">Effective Date: March 14, 2026</p>
     </div>
-
-    <h2>Steps to Delete Your Backup Data</h2>
-    <ol>
-        <li>Open the <strong>Cüzdanım</strong> app on your device.</li>
-        <li>Go to <strong>Settings → Google Drive Backup</strong>.</li>
-        <li>Disconnect your Google Drive account from the app.</li>
-        <li>Open your Google Drive account and locate the folder named <strong>"Cüzdanım Backup"</strong>.</li>
-        <li>Delete the folder to permanently remove all backup files.</li>
-    </ol>
-
-    <h2>Contact Us</h2>
-    <p>If you encounter any issues or have questions about deleting your data, please contact us at: <a href="mailto:fevzialtuntas37@gmail.com">fevzialtuntas37@gmail.com</a></p>
-
-    <p>After completing these steps, all of your backup data will be removed from your Google Drive. No data will remain on our servers.</p>
 </body>
 </html>
