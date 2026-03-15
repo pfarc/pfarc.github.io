@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<title>Araba Ne Kadar - Hesap Silme</title>
+
+<style>
+body{
+font-family: Arial, sans-serif;
+background:#f5f5f5;
+padding:40px;
+line-height:1.6;
+}
+
+.container{
+max-width:700px;
+margin:auto;
+background:white;
+padding:30px;
+border-radius:12px;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Araba Ne Kadar - Hesap Silme</h1>
+
+<p>Bu oyun Google Play Games Services kullanarak giriş ve liderlik tablosu özellikleri sunar.</p>
+
+<p>Uygulama kendi sunucularında herhangi bir kullanıcı hesabı veya kişisel veri saklamaz.</p>
+
+<p>Verilerinizi kaldırmak veya profilinizi silmek için:</p>
+
+<ul>
+<li>Oyunu Google Play Games profilinizden kaldırabilirsiniz</li>
+<li>Google hesap ayarlarınızdan oyunun bağlantısını kaldırabilirsiniz</li>
+</ul>
+
+<p>Daha fazla bilgi:</p>
+<p>https://support.google.com/googleplay/answer/9130647</p>
+
+<p>Veri silme talebi için iletişim:</p>
+<p>Email: yourmail@gmail.com</p>
+
+<hr>
+
+<h1>Account Deletion</h1>
+
+<p>This game uses Google Play Games Services for sign in and leaderboard features.</p>
+
+<p>The app does not create or store any user accounts or personal data on its own servers.</p>
+
+<p>To remove your data or profile:</p>
+
+<ul>
+<li>Remove the game from your Google Play Games profile</li>
+<li>Remove the game connection from your Google Account settings</li>
+</ul>
+
+<p>More info:</p>
+<p>https://support.google.com/googleplay/answer/9130647</p>
+
+<p>Deletion request contact:</p>
+<p>Email: yourmail@gmail.com</p>
+
+</div>
+
+</body>
+</html>
