@@ -1,63 +1,153 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data Deletion & Privacy - Cüzdanım</title>
-    <style>
-        body { font-family: 'Segoe UI', Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 0 20px; line-height: 1.6; color: #333; background-color: #f4f7f6; }
-        .container { background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
-        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
-        h2 { color: #2980b9; margin-top: 30px; font-size: 1.2em; }
-        .lang-section { margin-bottom: 40px; padding-bottom: 20px; border-bottom: 1px inset #eee; }
-        .note { background-color: #e8f4fd; border-left: 5px solid #3498db; padding: 15px; margin: 20px 0; border-radius: 4px; }
-        a { color: #3498db; text-decoration: none; font-weight: bold; }
-        code { background: #eee; padding: 2px 5px; border-radius: 3px; }
-    </style>
+    <title>Hesapcım - Kişisel Gelir Gider Takip Uygulaması</title>
+    <meta name="description" content="Hesapcım, kişisel bütçenizi kontrol altına almanız için tasarlanmış tamamen çevrimdışı çalışan, güvenli bir gelir ve gider takip uygulamasıdır.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <h1>Cüzdanım - Data Management</h1>
-
-        <div class="lang-section">
-            <h2>🇬🇧 Account & Data Deletion (English)</h2>
-            <p>We do <strong>not</strong> store your personal data or financial records on our servers. All backups are stored directly in your personal Google Drive account.</p>
-            <div class="note">
-                <strong>How to delete your data:</strong><br>
-                1. Open <strong>Cüzdanım</strong> app -> Settings -> Google Drive.<br>
-                2. Disconnect your account.<br>
-                3. Go to your Google Drive and delete the <code>Cüzdanım Backup</code> folder.
+    <header class="header">
+        <div class="container nav-container">
+            <div class="logo">
+                <img src="logo.png" alt="Hesapcım Logo" class="logo-img">
+                <span class="logo-text">Hesapcım</span>
             </div>
-            <p>For manual deletion requests: <a href="mailto:fevzialtuntas37@gmail.com">fevzialtuntas37@gmail.com</a></p>
+            <nav class="nav">
+                <a href="#features">Özellikler</a>
+                <a href="#about-disclosure">Hizmet Kapsamı</a>
+                <a href="privacy.html">Gizlilik Politikası</a>
+                <a href="#contact">İletişim</a>
+            </nav>
         </div>
+    </header>
 
-        <div class="lang-section">
-            <h2>🇹🇷 Hesap ve Veri Silme (Türkçe)</h2>
-            <p>Kişisel verileriniz veya finansal kayıtlarınız sunucularımızda <strong>tutulmaz</strong>. Tüm yedekler doğrudan kendi Google Drive hesabınızda saklanır.</p>
-            <div class="note">
-                <strong>Verilerinizi nasıl silersiniz:</strong><br>
-                1. <strong>Cüzdanım</strong> uygulamasını açın -> Ayarlar -> Google Drive.<br>
-                2. Hesabınızın bağlantısını kesin.<br>
-                3. Google Drive'ınıza gidin ve <code>Cüzdanım Backup</code> klasörünü silin.
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <span class="badge">100% Çevrimdışı ve Güvenli</span>
+                    <h1>Bütçenizi Kolayca Yönetin, Kontrolü Ele Alın</h1>
+                    <p class="hero-subtitle">Hesapcım, gelir ve giderlerinizi tamamen kendi cihazınızda kaydedip analiz etmenizi sağlayan, internet bağlantısı gerektirmeyen kişisel bütçe asistanınızdır.</p>
+                    <div class="hero-cta">
+                        <a href="#" class="btn btn-primary">Google Play'den İndir</a>
+                        <a href="#about-disclosure" class="btn btn-secondary">Daha Fazla Bilgi</a>
+                    </div>
+                </div>
+                <div class="hero-image-wrapper">
+                    <img src="mockup.png" alt="Hesapcım Mobil Uygulama Arayüzü" class="hero-img">
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="features">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Neden Hesapcım?</h2>
+                    <p>Finansal durumunuzu kontrol altında tutmak için karmaşık sistemlere ihtiyacınız yok.</p>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">🛡️</div>
+                        <h3>Maksimum Gizlilik</h3>
+                        <p>Verileriniz hiçbir sunucuya yüklenmez, yalnızca cihazınızda yerel veri tabanında (SQLite) saklanır.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">⚡</div>
+                        <h3>Hızlı ve Kolay Giriş</h3>
+                        <p>Tek dokunuşla gelir veya giderinizi ekleyin, kategorilere ayırın ve anında bütçe takibine başlayın.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📊</div>
+                        <h3>Görsel Analizler</h3>
+                        <p>Gelir ve gider dağılımlarınızı grafiklerle izleyerek harcama alışkanlıklarınızı kolayca analiz edin.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📱</div>
+                        <h3>Modern ve Akıcı Arayüz</h3>
+                        <p>Kullanıcı dostu, gözü yormayan modern arayüzü ve widget desteği ile bütçeniz her an elinizin altında.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Regulatory & Service Disclosure (G2RS Requirements) -->
+        <section id="about-disclosure" class="disclosure-section">
+            <div class="container">
+                <div class="disclosure-card">
+                    <div class="disclosure-header">
+                        <span class="warning-icon">⚠️</span>
+                        <h2>Önemli Bilgilendirme / Regulatory Disclosure</h2>
+                    </div>
+                    <div class="disclosure-content-grid">
+                        <div class="disclosure-lang">
+                            <h3>Türkçe Açıklama</h3>
+                            <p><strong>Hesapcım - Gelir Gider</strong> uygulaması, kullanıcıların kendi kişisel gelir ve giderlerini manuel olarak kaydetmelerini ve bütçe planlaması yapmalarını sağlayan <strong>tamamen çevrimdışı (offline) çalışan bir yardımcı araçtır.</strong></p>
+                            <ul>
+                                <li>Uygulamamız herhangi bir bankacılık hizmeti <strong>sunmaz</strong>.</li>
+                                <li>Yatırım danışmanlığı, hisse senedi veya menkul kıymet ticareti aracılığı <strong>yapmaz</strong>.</li>
+                                <li>Kredi, mikro-finansman veya borç para verme hizmeti <strong>sağlamaz</strong>.</li>
+                                <li>Para transferi, ödeme aracı veya diğer düzenlemeye tabi herhangi bir finansal işlem <strong>gerçekleştirmez</strong>.</li>
+                                <li>Üçüncü taraf finansal kuruluşlarla entegrasyonu yoktur, tamamen bağımsız ve kişisel bir muhasebe yardımcısıdır.</li>
+                            </ul>
+                        </div>
+                        <div class="disclosure-lang en">
+                            <h3>English Disclosure</h3>
+                            <p><strong>Hesapcım - Income & Expense Tracker</strong> is a <strong>strictly offline utility tool</strong> designed solely for users to manually record their personal income, expenses, and manage budgets on their local device.</p>
+                            <ul>
+                                <li>Our app <strong>does NOT</strong> provide any banking or micro-banking services.</li>
+                                <li>It <strong>does NOT</strong> offer investment advice or brokerage for securities.</li>
+                                <li>It <strong>does NOT</strong> facilitate loans, micro-lending, or credit scoring.</li>
+                                <li>It <strong>does NOT</strong> process money transfers, digital wallet services, or payment processing.</li>
+                                <li>No cloud databases or sync are used; all data remains 100% local on the user's device.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="contact-card">
+                    <h2>Bizimle İletişime Geçin</h2>
+                    <p>Uygulama hakkında sorularınız, önerileriniz veya destek talepleriniz için bize ulaşabilirsiniz.</p>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <span class="contact-icon">📧</span>
+                            <div>
+                                <h4>E-posta Adresi</h4>
+                                <p><a href="mailto:fevzialtuntas37@gmail.com">fevzialtuntas37@gmail.com</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">👤</span>
+                            <div>
+                                <h4>Geliştirici / Kurucu</h4>
+                                <p>PFarc7 - Fevzi Altuntaş</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; 2026 Hesapcım. Tüm Hakları Saklıdır.</p>
+            <div class="footer-links">
+                <a href="privacy.html">Gizlilik Politikası (Privacy Policy)</a>
+                <a href="#about-disclosure">Hizmet Kapsamı</a>
             </div>
         </div>
-
-        <div class="lang-section">
-            <h2>🇩🇪 Datenlöschung (Deutsch)</h2>
-            <p>Löschen Sie einfach den Ordner <code>Cüzdanım Backup</code> in Ihrem Google Drive, um alle Daten zu entfernen.</p>
-        </div>
-
-        <div class="lang-section">
-            <h2>🇫🇷 Suppression des données (Français)</h2>
-            <p>Supprimez le dossier <code>Cüzdanım Backup</code> dans votre Google Drive pour effacer vos données.</p>
-        </div>
-
-        <div class="lang-section">
-            <h2>🇮🇳 डेटा हटाना (Hindi)</h2>
-            <p>अपना डेटा हटाने के लिए Google Drive से <code>Cüzdanım Backup</code> फ़ोल्डर हटा दें।</p>
-        </div>
-
-        <p style="font-size: 0.9em; color: #7f8c8d; text-align: center;">Effective Date: March 14, 2026</p>
-    </div>
+    </footer>
 </body>
 </html>
